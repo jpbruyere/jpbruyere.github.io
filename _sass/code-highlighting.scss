@@ -1,0 +1,35 @@
+$code-font-family: "Courier New", monospace;
+$code-background-color: #999;
+/**
+ * Code formatting
+ */
+pre, code {
+  width:auto;  
+  font-family: $code-font-family;
+  font-size: 0.8rem;
+}
+code.language-plaintext {
+  background:#cdf;  
+  padding: 0px 0.2em;
+  border-radius: 0.1em;
+  //border-width:20px;
+  border: thin outset #eee;  
+  //border-style:inset;
+  //font-weight:600;
+}
+pre {
+  //padding: 1px 5px;  
+  width: auto;
+  tab-size: 2;
+  -moz-tab-size: 2;
+  
+}
+.highlight {
+  margin: 0;  
+  padding: 3px ;
+  overflow-x: auto;
+}
+div.highlight {
+	border-radius: 10px;
+	border: 1px inset #ccc;
+}

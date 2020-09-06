@@ -1,0 +1,103 @@
+$dim-color: #444;
+$link-color: #448;
+
+$text-color-dim: #333;
+$main-font-family: 'Times New Roman', Times, serif;
+$main-font-size: 1.0em;
+
+%text-base {
+  font-family:$main-font-family;
+  font-size: $main-font-size;
+  text-align: justify;
+}
+
+body {
+  background-color: white;
+  @extend %text-base;
+  color: $text-color-dim;
+}
+
+.wrapper {  
+  max-width: 680px;
+  margin: auto;
+  padding: 0.5em;
+  border-left: thin solid #ccc;
+  border-top: thin solid #ccc;
+}
+
+.tag {
+  vertical-align: top;
+  font-family: monospace;
+  font-size:0.8em;
+  //font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 0.4em;
+  //border: thin solid $dim-color;
+  background:#68c;
+  color: #eee;
+}
+
+.post-list {  
+  margin: 1rem;
+  table, td {
+    border:none;    
+  }
+  td.date {    
+    width:18%;    
+    font-size:0.8em;
+    color: $dim-color;
+    padding-bottom: 5px;
+  }
+  td.title {            
+    a {            
+      text-decoration:none;
+      color:$link-color;
+      font-family: times;
+      font-size:1.6em;
+    }
+    a:hover {
+      color: red;
+    }
+    a:visited {
+      color:$text-color-dim;
+    }
+  }
+  td.excerpt {
+    > p {
+      margin:0;
+      padding:0;
+      color:#555;
+    }
+  }
+}
+
+@import "code-highlighting";
+@import "exposed";
+
+blockquote {
+  border-left: .20em solid royalblue;
+  color: #6a737d;  
+  padding: 0 1em;
+  margin: 1em;
+}
+
+h1 {
+  line-height: 2rem;
+  background: black;
+  color: white;
+  padding: 10px 5px 5px;
+  margin: 0px -15px;
+}
+
+hr {
+  text-align: center;
+  border: 0;
+
+  &:before { content: '/////' }
+  &:after { content: attr(data-content) '/////' }
+}
+
+table, th, td {
+  border: thin solid $dim-color;
+  border-collapse: collapse;
+}
