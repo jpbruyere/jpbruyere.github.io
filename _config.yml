@@ -9,7 +9,8 @@ twitter_username: jpbruyere
 github_username: jpbruyere
 
 # Build settings
-remote_theme: riggraz/no-style-please
+#remote_theme: riggraz/no-style-please
+theme: no-style-please
 markdown: kramdown
 highlighter: rouge
 kramdown:

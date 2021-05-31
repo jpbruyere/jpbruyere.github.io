@@ -5,6 +5,8 @@ $text-color-dim: #333;
 $main-font-family: 'Times New Roman', Times, serif;
 $main-font-size: 1.0em;
 
+@import "icons";
+
 %text-base {
   font-family:$main-font-family;
   font-size: $main-font-size;
