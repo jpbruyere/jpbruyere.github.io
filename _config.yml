@@ -1,7 +1,7 @@
-title: VKVG Documentation
+title: Inertiae
 email: jp_bruyere@hotmail.com
 description: >-
-  description: Open source 2d vector graphic library for vulkan writen in c.
+  My developpement blog.
 
 #baseurl: "vkvg" # the subpath of your site, e.g. /blog
 url: "https://jpbruyere.github.io" # the base hostname & protocol for your site, e.g. http://example.com
