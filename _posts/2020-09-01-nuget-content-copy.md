@@ -8,7 +8,7 @@ The problem when including custom files into a nuget package is that their are e
 
 Here is an example to ship a `.dll.config` file with a nuget package and have it copied into the destination build directory.
 
-Nuget have a special folder called `build` where you may put only two files: a `ProjectName.props` or a `ProjectName.targets`.
+Nuget has a special folder called `build` where you may put only two files: a `ProjectName.props` or a `ProjectName.targets`.
 
 Those files will be processed like any props or targets during the build of the destination project.
 
